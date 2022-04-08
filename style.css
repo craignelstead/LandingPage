@@ -2,7 +2,6 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 
@@ -15,15 +14,24 @@ body {
 .header h2 {
     font-size: 24px;
     color: #F9FAF8;
-    padding-left: 10px;
+
 }
 
 .header {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.header, .footer {
+.headercontent {
+    display: flex;
+    align-items: center;
+    width: 1200px;
+    
+}
 
+.headercontent ul {
+    margin-left: auto;
 }
 
 ul {
@@ -43,18 +51,28 @@ a:hover {
     color:#c2c3c5;
 }
 
-.content {
+/*.content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+}*/
 
 .container {
     display: flex;
     justify-content: center;
-    padding: 8px;
-    margin-bottom: 50px;
+
+    align-items: center;
+}
+
+.container, .contentbox3 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.contentbox1 {
+    display: flex;
+    justify-content: center;
     max-width: 1200px;
 }
 
@@ -64,14 +82,17 @@ a:hover {
 }
 */
 
+
+
 .welcome-img {
-    max-width: 500px;
+    max-width: 600px;
     height: auto;
+    padding-left: 40px;
 }
 
 .top-text h1 {
     font-size: 48px;
-    font-weight: 1000;
+    font-weight: 1200;
     color: #F9FAF8;
 }
 
@@ -120,25 +141,32 @@ button:active {
     flex-direction: column;
     width: 250px;
     text-align: center;
-    justify-content: center;
     align-items: center;
     border-radius: 25px;
     border: 2px solid #1F2937;
     padding: 8px;
 }
 
-.quote {
+.contentbox3 {
+    display: flex;
+    justify-content: center;
     background-color: #E5E7EB;
+}
+
+.quote {
+    
     font-style: italic;
     color: #1F2937;
     font-size: 36px;
     flex-direction: column;
-    max-width: 800px;
+    max-width: 1200px;
+    display: flex;
 }
 
 .bludwurst {
     margin-left: auto;
     font-size: 20px;
+    font-weight: 800;
 }
 
 button, .call-to-action {
@@ -151,13 +179,27 @@ button, .call-to-action {
     padding: 10px;
     display: flex;
     border-radius: 10px;
-    width: 600px;
+    width: 1200px;
+    align-items: center;
+    justify-content: center;
+}
+
+.bluebottom {
+    display: flex;
+    align-items: center;
+}
+
+.moredivs {
+    width: 700px;
+    display: flex;
+    flex-direction: row;
     align-items: center;
 }
 
 .call-to-action button {
     margin-left: auto;
     border: 1px solid white;
+    max-height: 40px;
 }
 
 .action-steps {
